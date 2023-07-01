@@ -1,0 +1,36 @@
+{
+  "name": "solid-bookmarks",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "docker:up": "docker compose up -d",
+    "db:migrate": "drizzle-kit generate:pg",
+    "db:push": "tsx ./scripts/migrate.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "drizzle-kit": "^0.19.2",
+    "esbuild": "^0.14.54",
+    "postcss": "^8.4.21",
+    "solid-start-node": "^0.2.19",
+    "tsx": "^3.12.7",
+    "typescript": "^4.9.4",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.8.2",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.27.0",
+    "postgres": "^3.3.5",
+    "solid-js": "^1.7.2",
+    "solid-start": "^0.2.26",
+    "undici": "^5.15.1",
+    "zod": "^3.21.4"
+  },
+  "engines": {
+    "node": ">=16.8"
+  }
+}
